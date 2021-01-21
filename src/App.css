@@ -1,38 +1,203 @@
-.App {
-  text-align: center;
+/*
+app mobile version is optimized on iphone X
+ */
+
+
+#carousel {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: darkgray;
+  margin: auto;
+  border-radius: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#frame {
+  position: absolute;
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  border-radius: 15px;
+  overflow: hidden;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+h1 {
+  background-color: black;
+  border-radius: 20px;
+  position: absolute;
   color: white;
+  text-align: center;
+  width: 300px;
+  height: 85px;
+  left: 50%;
+  top: 50%;
+  margin-left: -150px;
+  margin-top: -37.5px;
+  font-size: 80px;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.button {
+  text-align: center;
+  border: 5px solid;
+  position: absolute;
+  background-color: white;
+  border-radius: 20px;
+  height: 30px;
+  width: 30px;
+  user-select: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#button1 {
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+  margin-top: -43px;
+}
+
+#button2 {
+  top: 100%;
+  left: 50%;
+  margin-left: 30px;
+  margin-top: -43px;
+}
+
+h3 {
+  display: inline-block;
+  margin: 5px auto;
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (max-width: 450px) and (min-height: 700px) {
+  #button1 {
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+    margin-top: -50px;
   }
-  to {
-    transform: rotate(360deg);
+
+  #button2 {
+    top: 100%;
+    left: 50%;
+    margin-left: 30px;
+    margin-top: -50px;
+  }
+
+}
+
+@media screen and (max-height: 450px) {
+  h3 {
+    font-size: 20px;
+    display: inline-block;
+    margin: 8px auto;
+    width: 20px;
+    height: 20px;
+  }
+
+  .button {
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+  }
+
+  #frame {
+    position: absolute;
+    width: 85%;
+    height: 95%;
+    border-radius: 15px;
+    overflow: hidden;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  }
+
+  #button1 {
+    top: 50%;
+    margin-top: -20px;
+    left: 0;
+    margin-left: 8px;
+  }
+
+  #button2 {
+    top: 50%;
+    margin-top: -20px;
+    left: 100%;
+    margin-left: -55px;
+  }
+
+}
+
+@media screen and (min-width: 850px) {
+
+  #carousel {
+    position: relative;
+    width: 700px;
+    height: 400px;
+    background-color: darkgray;
+    margin: 250px auto;
+    border-radius: 5px;
+  }
+
+  #frame {
+    position: absolute;
+    background-color: #48aaad;
+    width: 600px;
+    height: 320px;
+    top: 50%;
+    left: 50%;
+    margin-left: -300px;
+    margin-top: -162.5px;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+
+  #button1 {
+    top: 50%;
+    left: 100%;
+    margin-top: 0px;
+    margin-left: -45px;
+  }
+
+  #button2 {
+    left: 100%;
+    top: 50%;
+    margin-top: -50px;
+    margin-left: -45px;
+  }
+
+}
+
+@keyframes anim {
+  100% {
+    width: 100%
   }
 }
+
+@keyframes anim1 {
+  100% {
+    width: 100%
+  }
+}
+
+@keyframes anim2 {
+  100% {
+    width: 0
+  }
+}
+
+@keyframes anim3 {
+  100% {
+    width: 0
+  }
+}
+
